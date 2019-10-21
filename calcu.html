@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Calcjs</title>
+</head>
+<!-- calaci program by clicking on the button-->
+<body>
+firstnum:<input type="text" id="dem">
+Seconnum:<input type="text" id="dem1">
+Plus:<input type="button"  value="+" onclick="Camp()">
+<p id="pls"></p>
+Minus:<input type="button"  value="-" onclick="Camp()">
+<p id="min"></p>
+Div:<input type="button"  value="*" onclick="Camp()">
+<p id="div"></p>
+</body>
+<script type="text/javascript">
+function Camp(){
+	var a=document.getElementById("dem").value;
+	var b=document.getElementById("dem1").value;
+	
+	var sum=Number(a)+Number(b);
+	document.getElementById("pls").innerHTML=sum;
+	var mi=Number(a)-Number(b);
+	document.getElementById("min").innerHTML=mi;
+	var di=Number(a)*Number(b);
+	document.getElementById("div").innerHTML=di;
+}
+</script>
+</html>
